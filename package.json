@@ -1,0 +1,23 @@
+{
+  "name": "ice_cream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style" : "sass --watch sass/style.scss sass/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/job356/ice_cream.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/job356/ice_cream/issues"
+  },
+  "homepage": "https://github.com/job356/ice_cream#readme",
+  "dependencies": {
+    "node": "^19.8.1"
+  }
+}
