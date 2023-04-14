@@ -1,0 +1,33 @@
+.button {
+    @include font($size: 1.4rem, $weight: 600, $height: 1.8rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+
+    padding: 12px 34px;
+    border-radius: 10px;
+    border: none;
+
+    color: $text-color-dark;
+    background: $color-primary;
+
+    @extend %transition;
+    
+    &:hover {
+        background: #0A8817;
+        color: #000000;
+    }
+    &:active {
+        background: #0A8817;
+        color: $text-color-light;
+    }
+    &:disabled {
+        background: #ABABAB;
+        color: #000000;
+    }
+}
+
+.arrow-button:active {
+    stroke: #ABABAB;
+}
