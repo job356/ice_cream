@@ -15,3 +15,21 @@
         background-image: url(../Assets/icons/arrow-icons/welcome-arrow-focus.svg);
     }
 }
+
+.product__arrow {
+    display: inline-block;
+    width: 42px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url(../Assets/icons/arrow-icons/produts-arrow.svg);
+    &:hover {
+        width: 51px;
+        background-image: url(../Assets/icons/arrow-icons/produts-arrow-hover.svg);
+        @extend %transition;
+    }
+    &:focus {
+        width: 51px;
+        background-image: url(../Assets/icons/arrow-icons/produts-arrow-active.svg);
+        @extend %transition;
+    }
+}

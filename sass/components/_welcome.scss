@@ -1,11 +1,10 @@
 .welcome {
     padding: 48px 0 65px;
-   //background: $bg-color-main;
 }
 
 .header-welcome-bg {
     background-color: $bg-color-main;
-    background-image: url(/Assets/img/backgrounds/welcome-bg/ice-cream-welcom-bg.png), url(../Assets/img/backgrounds/welcome-bg/doats-welcome-bg.png);
+    background-image: url(../Assets/img/backgrounds/welcome-bg/ice-cream-welcom-bg.png), url(../Assets/img/backgrounds/welcome-bg/doats-welcome-bg.png);
     background-repeat: no-repeat;
     background-position: right 15px, right bottom;
 }

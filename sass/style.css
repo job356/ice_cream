@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ==========================================================================
    Normalize.scss settings
    ========================================================================== */
@@ -409,7 +410,7 @@ h2 > *, h1 {
   font-family: "Seymour One", "Verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
-.navigation__item, .link-button, .button, .welcome-arrow {
+.navigation__item, .link-button, .button, .product__arrow:focus, .product__arrow:hover, .welcome-arrow {
   transition: all 0.2s ease;
 }
 
@@ -459,6 +460,22 @@ h2 > * {
   width: 52px;
   height: 24px;
   background-image: url(../Assets/icons/arrow-icons/welcome-arrow-focus.svg);
+}
+
+.product__arrow {
+  display: inline-block;
+  width: 42px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image: url(../Assets/icons/arrow-icons/produts-arrow.svg);
+}
+.product__arrow:hover {
+  width: 51px;
+  background-image: url(../Assets/icons/arrow-icons/produts-arrow-hover.svg);
+}
+.product__arrow:focus {
+  width: 51px;
+  background-image: url(../Assets/icons/arrow-icons/produts-arrow-active.svg);
 }
 
 .button {
@@ -530,7 +547,7 @@ h2 > * {
 
 .header-welcome-bg {
   background-color: #84A178;
-  background-image: url(/Assets/img/backgrounds/welcome-bg/ice-cream-welcom-bg.png), url(../Assets/img/backgrounds/welcome-bg/doats-welcome-bg.png);
+  background-image: url(../Assets/img/backgrounds/welcome-bg/ice-cream-welcom-bg.png), url(../Assets/img/backgrounds/welcome-bg/doats-welcome-bg.png);
   background-repeat: no-repeat;
   background-position: right 15px, right bottom;
 }
@@ -592,6 +609,79 @@ h2 > * {
   text-align: right;
 }
 
+.products {
+  padding: 60px 0 57px;
+  background-repeat: no-repeat;
+  background-image: url(../Assets/img/backgrounds/product-bg/Мороженое\ фон.svg);
+}
+
+.products__title {
+  margin: 0 0 17px;
+}
+
+.product-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 64px 44.06px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+.product-content_ice-cream {
+  background: #AEC6A5;
+}
+.product-content_ice-coffee {
+  background: #EFD478;
+}
+.product-content_milkshake {
+  background: #D6936D;
+}
+
+.product__circle {
+  position: relative;
+  box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+}
+.product__circle_ice-cream {
+  background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+}
+.product__circle_ice-coffee {
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+}
+.product__circle_milkshake {
+  background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+}
+
+.product__img {
+  position: relative;
+  top: -17px;
+}
+
+.product__name {
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.7rem;
+  margin: 166.16px 0 65.06px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+}
+
+.product__description {
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  height: 147px;
+  margin: 0 0 60.06px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+
 .wrapper {
   max-width: 1168px;
   margin: auto;
@@ -609,6 +699,24 @@ h2 > * {
 }
 .layout-2-column_welcome {
   gap: 24px;
+}
+
+.layout-3-column {
+  display: flex;
+  align-items: center;
+}
+.layout-3-column_products {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.layout-3-column_products > * {
+  flex-basis: 370px;
+}
+.layout-3-column_product-circle {
+  position: relative;
+  top: 123px;
+  justify-content: space-around;
+  gap: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

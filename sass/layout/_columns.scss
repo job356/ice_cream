@@ -4,3 +4,21 @@
         gap: 24px;
     }
 }
+
+.layout-3-column {
+    @include column;
+    &_products {
+        justify-content: space-between;
+        align-items: flex-start;
+        >* {
+            flex-basis: 370px;
+        }
+    }
+    &_product-circle {
+        position: relative;
+        top: 123px;
+
+        justify-content: space-around;
+        gap: 30px;
+    }
+}

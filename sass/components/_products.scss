@@ -1,0 +1,69 @@
+.products {
+    padding: 60px 0 57px;
+    background-repeat: no-repeat;
+    background-image: url(../Assets/img/backgrounds/product-bg/Мороженое\ фон.svg);
+}
+
+.products__title {
+    margin: 0 0 17px;
+}
+
+.product-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 64px 44.06px;
+
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    &_ice-cream {
+        background: $bg-color-ice-cream-product;
+    }
+    &_ice-coffee {
+        background: $bg-color-ice-coffee-product;
+    }
+    &_milkshake {
+        background: $bg-color-milkshake-product;
+    }
+}
+
+.product__circle {
+    position: relative;
+    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+    border-radius: 50%;
+    &_ice-cream {
+        background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+    }
+    &_ice-coffee {
+        background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    }
+    &_milkshake {
+        background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
+    }
+}
+
+.product__img {
+    position: relative;
+    top: -17px;
+}
+
+.product__name {
+    @include font($size: 3rem, $weight: 700, $height: 3.7rem);
+    margin: 166.16px 0 65.06px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-color-dark;
+}
+
+.product__description {
+    @include font($size: 1.6rem, $weight: 400, $height: 2.8rem);
+    height: 147px;
+    margin: 0 0 60.06px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $text-color-dark;
+}
