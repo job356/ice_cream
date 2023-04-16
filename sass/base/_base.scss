@@ -5,3 +5,23 @@ html {
 body {
     @extend %font-prim;
 }
+
+h1 {
+    @extend %font-add;
+    @include font($size: 3.8rem, $weight: 400, $height: 4.8rem);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+h2 {
+    @include font($size: 3rem, $weight: 800, $height: 3.7rem);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-color-dark;
+    >* {
+        @extend %font-add;
+        @include font($size: 3.6rem, $weight: 400, $height: 4.5rem);
+        letter-spacing: 0.06em;
+    }
+}

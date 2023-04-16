@@ -1,0 +1,6 @@
+.layout-2-column {
+    @include column;
+    &_welcome {
+        gap: 24px;
+    }
+}

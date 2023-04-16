@@ -9,54 +9,58 @@
     <link rel="stylesheet" href="sass/style.css">
 </head>
 <body>
-    <header class="header">
-        <div class="wrapper header__wrapper">
-            <div class="logo">
-                <object data="Assets/icons/Logo.svg" type="image/svg+xml"></object>
+    <div class="header-welcome-bg">
+        <header class="header">
+            <div class="wrapper header__wrapper">
+                <div class="logo">
+                    <object data="Assets/icons/Logo.svg" type="image/svg+xml"></object>
+                </div>
+                <nav>
+                    <ul class="navigation">
+                        <li><a class="navigation__item" href="#">Home</a></li>
+                        <li><a class="navigation__item" href="#">How it’s made?</a></li>
+                        <li><a class="navigation__item" href="#">Our products</a></li>
+                        <li><a class="navigation__item" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="button">
+                    Buy now
+                    <object data="Assets/icons/arrow-icons/button-arrow.svg" type="image/svg+xml"></object>
+                </button>
             </div>
-            <nav>
-                <ul class="navigation">
-                    <li><a class="navigation__item" href="#">Home</a></li>
-                    <li><a class="navigation__item" href="#">How it’s made?</a></li>
-                    <li><a class="navigation__item" href="#">Our products</a></li>
-                    <li><a class="navigation__item" href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="button">
-                Buy now
-                <object data="Assets/icons/arrow-icons/button-arrow.svg" type="image/svg+xml"></object>
-            </button>
-        </div>
-    </header>
-    <main>
+        </header>
         <section class="welcome">
-        <div class="wrapper">
-            <div class="welcome__content">
-                <h1 class="welcome__title">ice cream made with passion</h1>
-                <div class="welcome__buttons">
-                    <button class="button">Products</button>
-                    <a class="link-button" href="#">How it’s made?</a>
+            <div class="wrapper welcome__wrapper">
+                <div class="welcome__content">
+                    <h1 class="welcome__title">ice cream<br>made with<br>passion</h1>
+                    <div class="welcome__buttons">
+                        <button class="button">Products</button>
+                        <a class="link-button" href="#">How it’s made?</a>
+                    </div>
+                    <div class="layout-2-column layout-2-column_welcome">
+                        <img class="more-img" src="Assets/img/backgrounds/welcome-bg/more-img.png" alt="plate of ice cream">
+                        <div class="welcome__more">
+                            <p class="more-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            </p>
+                            <span class="welcome-arrow"></span>
+                        </div>
+                    </div>
                 </div>
-                <div class="welcome__more">
-                    <img class="more-img" src="Assets/img/backgrounds/welcome-bg/more-img.jpg" alt="plate of ice cream">
-                    <p class="more-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    </p>
-                    <span class="welcome-arrow"></span>
+                <div class="welcome__points">
+                    <div class="cafes-point">
+                        <p class="amount__point amount__point_cafes">16</p>
+                        <p class="name__point">cafes</p>
+                    </div>
+                    <div class="truck-point">
+                        <p class="amount__point amount__point_truck">23</p>
+                        <p class="name__point">food trucks</p>
+                    </div>
                 </div>
-            </div>
-            <div class="welcome__points">
-                <div class="cafes-point">
-                    <p class="amount__point">16</p>
-                    <p class="name__point">cafes</p>
-                </div>
-                <div class="truck-point">
-                    <p class="amount__point">23</p>
-                    <p class="name__point">food trucks</p>
-                </div>
-            </div>
-        </div>    
+            </div>   
         </section>
+    </div>
+    <main>
         <section class="products">
             <div class="wrapper">
                 <h2 class="products__title">100% natural <span>products</span></h2>

@@ -405,7 +405,11 @@ body {
   font-family: "Montserrat", "Verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
-.navigation__item, .button {
+h2 > *, h1 {
+  font-family: "Seymour One", "Verdana", "Geneva", "Tahoma", "sans-serif";
+}
+
+.navigation__item, .link-button, .button, .welcome-arrow {
   transition: all 0.2s ease;
 }
 
@@ -413,12 +417,48 @@ html {
   font-size: 10px;
 }
 
-.button-arrow {
-  width: 12px;
-  height: 12px;
+h1 {
+  font-style: normal;
+  font-size: 3.8rem;
+  font-weight: 400;
+  line-height: 4.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 3.7rem;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+}
+h2 > * {
+  font-style: normal;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 4.5rem;
+  letter-spacing: 0.06em;
+}
+
+.welcome-arrow {
+  display: inline-block;
+  width: 51px;
+  height: 16px;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url(../Assets/icons/arrow-icons/button-arrow.svg);
+  background-image: url(/Assets/icons/arrow-icons/welcome-arrow.svg);
+  cursor: pointer;
+}
+.welcome-arrow:hover {
+  background-image: url(../Assets/icons/arrow-icons/welcome-arrow-hover.svg);
+}
+.welcome-arrow:focus {
+  width: 52px;
+  height: 24px;
+  background-image: url(../Assets/icons/arrow-icons/welcome-arrow-focus.svg);
 }
 
 .button {
@@ -449,8 +489,21 @@ html {
   color: #000000;
 }
 
-.arrow-button:active {
-  stroke: #ABABAB;
+.link-button {
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.7rem;
+  color: #F8D24E;
+}
+.link-button:hover {
+  color: #0A8817;
+}
+.link-button:active {
+  color: #FCFCFC;
+}
+.link-button:disabled {
+  color: #ABABAB;
 }
 
 .navigation {
@@ -471,19 +524,91 @@ html {
   color: #F8D24E;
 }
 
+.welcome {
+  padding: 48px 0 65px;
+}
+
+.header-welcome-bg {
+  background-color: #84A178;
+  background-image: url(/Assets/img/backgrounds/welcome-bg/ice-cream-welcom-bg.png), url(../Assets/img/backgrounds/welcome-bg/doats-welcome-bg.png);
+  background-repeat: no-repeat;
+  background-position: right 15px, right bottom;
+}
+
+.welcome__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome__title {
+  margin: 0 0 28px;
+  color: #FCFCFC;
+}
+
+.welcome__buttons {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  padding-bottom: 42px;
+}
+
+.welcome__more {
+  flex-basis: 200px;
+}
+
+.more-text {
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin: 32px 0 32px;
+  color: #FCFCFC;
+}
+
+.amount__point {
+  font-style: normal;
+  font-size: 4.6rem;
+  font-weight: 900;
+  line-height: 5.6rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: right;
+  color: #131313;
+}
+.amount__point_cafes {
+  margin: 8px 0 4px;
+}
+.amount__point_truck {
+  margin: 16px 0 4px;
+}
+
+.name__point {
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7rem;
+  color: #FCFCFC;
+  margin: 0%;
+  text-align: right;
+}
+
 .wrapper {
   max-width: 1168px;
   margin: auto;
-}
-
-.header {
-  background: #84A178;
 }
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.layout-2-column {
+  display: flex;
+  align-items: center;
+}
+.layout-2-column_welcome {
+  gap: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

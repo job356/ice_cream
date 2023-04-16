@@ -1,7 +1,17 @@
-.button-arrow {
-    width: 12px;
-    height: 12px;
+.welcome-arrow {
+    display: inline-block;
+    width: 51px;
+    height: 16px;
     background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url(../Assets/icons/arrow-icons/button-arrow.svg);
+    background-image: url(/Assets/icons/arrow-icons/welcome-arrow.svg);
+    @extend %transition;
+    cursor: pointer;
+    &:hover {
+        background-image: url(../Assets/icons/arrow-icons/welcome-arrow-hover.svg);
+    }
+    &:focus {
+        width: 52px;
+        height: 24px;
+        background-image: url(../Assets/icons/arrow-icons/welcome-arrow-focus.svg);
+    }
 }

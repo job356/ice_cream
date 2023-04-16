@@ -1,0 +1,59 @@
+.welcome {
+    padding: 48px 0 65px;
+   //background: $bg-color-main;
+}
+
+.header-welcome-bg {
+    background-color: $bg-color-main;
+    background-image: url(/Assets/img/backgrounds/welcome-bg/ice-cream-welcom-bg.png), url(../Assets/img/backgrounds/welcome-bg/doats-welcome-bg.png);
+    background-repeat: no-repeat;
+    background-position: right 15px, right bottom;
+}
+
+.welcome__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcome__title {
+    margin: 0 0 28px;
+    color: $text-color-light;
+}
+
+.welcome__buttons {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    padding-bottom: 42px;
+}
+
+.welcome__more {
+    flex-basis: 200px;
+}
+
+.more-text {
+    @include font($size: 1.4rem, $weight: 400, $height: 2rem);
+    margin: 32px 0 32px;
+    color: $text-color-light;
+}
+
+.amount__point {
+    @include font($size: 4.6rem, $weight: 900, $height: 5.6rem);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: right;
+    color: $text-color-dark;
+    &_cafes {
+        margin: 8px 0 4px;
+    }
+    &_truck {
+        margin: 16px 0 4px;
+    }
+}
+
+.name__point {
+    @include font($size: 1.4rem, $weight: 400, $height: 1.7rem);
+    color: $text-color-light;
+    margin: 0%;
+    text-align: right;
+}

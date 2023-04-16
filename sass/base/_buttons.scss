@@ -13,7 +13,7 @@
     background: $color-primary;
 
     @extend %transition;
-    
+
     &:hover {
         background: #0A8817;
         color: #000000;
@@ -28,6 +28,17 @@
     }
 }
 
-.arrow-button:active {
-    stroke: #ABABAB;
+.link-button {
+    @include font($size:1.4rem, $weight: 600, $height: 1.7rem);
+    color: $color-primary;
+    @extend %transition;
+    &:hover {
+        color: #0A8817;
+    }
+    &:active {
+        color: $text-color-light;
+    }
+    &:disabled {
+        color: #ABABAB;
+    }
 }
