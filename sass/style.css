@@ -410,7 +410,7 @@ h2 > *, h1 {
   font-family: "Seymour One", "Verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
-.navigation__item, .link-button, .button, .product__arrow:focus, .product__arrow:hover, .welcome-arrow {
+.navigation__item, .link-button, .button_transparent, .button, .product__arrow:focus, .product__arrow:hover, .welcome-arrow {
   transition: all 0.2s ease;
 }
 
@@ -514,6 +514,30 @@ h2 > * {
 .button:disabled {
   background: #ABABAB;
   color: #000000;
+}
+
+.button_transparent {
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: none;
+  border: 2px solid #F8D24E;
+  color: #131313;
+  background: transparent;
+}
+.button_transparent:hover {
+  border: 2px solid #0A8817;
+}
+.button_transparent:focus {
+  border: 2px solid #0A8817;
+  color: #FCFCFC;
 }
 
 .link-button {
