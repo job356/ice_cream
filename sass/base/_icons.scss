@@ -44,3 +44,51 @@
     border-radius: 25px;
     background: $color-primary;
 }
+
+.footer__icons {
+    display: flex;
+    gap: 30px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+
+    background-repeat: no-repeat;
+    cursor: pointer;
+    @extend %transition;
+    &_git-hub {
+        background-image: url(../Assets/icons/social-icons/github.svg);
+        &:hover {
+            background-image: url(../Assets/icons/social-icons/github-hover.svg);
+        }
+        &:active {
+            width: 35px;
+            height: 35px;
+            background-image: url(../Assets/icons/social-icons/github-focus.svg);
+        }
+    }
+    &_telegram {
+        background-image: url(../Assets/icons/social-icons/telegram.svg);
+        &:hover {
+            background-image: url(../Assets/icons/social-icons/telegram-hover.svg);
+        }
+        &:active {
+            width: 35px;
+            height: 35px;
+            background-image: url(/Assets/icons/social-icons/telegram-focus.svg);
+        }
+    }
+    &_facebook {
+        background-image: url(../Assets/icons/social-icons/facebook.svg);
+        &:hover {
+            background-image: url(../Assets/icons/social-icons/facebook-hover.svg);
+        }
+        &:active {
+            width: 35px;
+            height: 35px;
+            background-image: url(../Assets/icons/social-icons/facebook-focus.svg);
+        }
+    }
+}

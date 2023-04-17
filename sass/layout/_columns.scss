@@ -14,6 +14,11 @@
             flex-basis: 532px;
         }
     }
+    &_footer {
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 0 60px
+    }
 }
 
 .layout-3-column {
