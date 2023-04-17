@@ -3,6 +3,13 @@
     &_welcome {
         gap: 24px;
     }
+    &_production {
+        align-items: flex-start;
+        gap: 100px;
+        >* {
+            flex-basis: 500px
+        }
+    }
 }
 
 .layout-3-column {

@@ -1,0 +1,34 @@
+.production {
+    padding: 60px 0 0;
+    background: $bg-color-main;
+}
+
+.production__title {
+    margin: 0 0 82px;
+    color: $text-color-light;
+}
+
+.production__img {
+    position: relative;
+    width: 490px;
+    height: 490px;
+    border-radius: 250px;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+    >* {
+        position: absolute;
+        top: 39px;
+        left: 3px
+    }
+}
+
+.production__content {
+    padding: 90px 0 0;
+}
+
+.production__text {
+    @include font($size: 1.6rem, $weight: 400, $height: 2.8rem);
+    margin: 0%;
+    letter-spacing: 0.04em;
+    color: $text-color-light;
+}

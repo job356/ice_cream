@@ -32,6 +32,10 @@
 
 .product__circle {
     position: relative;
+    top: 123px;
+    left: 33px;
+    width: 301px;
+    height: 300px;
     box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
     border-radius: 50%;
     &_ice-cream {
@@ -46,7 +50,7 @@
 }
 
 .product__img {
-    position: relative;
+    position: absolute;
     top: -17px;
 }
 
