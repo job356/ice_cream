@@ -16,11 +16,6 @@
     padding: 12px 0 0;
 }
 
-.social-icons {
-    display: flex;
-    gap: 30px;
-}
-
 .footer__contacts {
     @include font($size: 1.6rem, $weight: 700, $height: 3rem);
     margin: 0%;
