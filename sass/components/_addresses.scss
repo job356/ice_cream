@@ -1,0 +1,71 @@
+.addresses {
+    padding: 0 0 120px;
+    background: $bg-color-main;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    padding: 33px 40px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    background: #FFFFFF;
+}
+
+.point-bg {
+    width: fit-content;
+    padding: 0 14px;
+    border-radius: 6px;
+    background: $color-primary;
+}
+
+.point-name {
+    @include font($size: 1.6rem, $weight: 500, $height: 3rem);
+    margin: 0%;
+    text-align: center;
+    color: $text-color-dark;
+}
+
+.address__city, .address__working-days, .address__phone, .address__email {
+    @include font($size: 1.6rem, $weight: 500, $height: 3rem);
+    margin: 0%;
+    letter-spacing: 0.04em;
+    color: $text-color-dark;
+}
+
+.address__opening-hours {
+    @include font($size: 1.6rem, $weight: 500, $height: 3rem);
+    margin: 0%;
+    color: #ABABAB;
+    &_delimiter {
+        margin: 0 0 12px;
+    }
+}
+
+.address__link {
+    @include font($size: 1.6rem, $weight: 500, $height: 2.9rem);
+    margin: 0%;
+    letter-spacing: 0.04em;
+    color: $text-color-link;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: #E1E1E1;
+}
+
+.address__button {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    >* {
+        flex-basis: 196px;
+    }
+}
