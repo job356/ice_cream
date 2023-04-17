@@ -766,6 +766,80 @@ h2 > * {
   color: #FCFCFC;
 }
 
+.testimonials__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials {
+  padding: 452px 0 207px;
+  background-repeat: no-repeat;
+  background-image: url(/Assets/img/backgrounds/testimonials-bg/Мороженое\ фон.svg);
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.testimonial__icon {
+  width: 85px;
+  height: 85px;
+  border-radius: 44px;
+}
+
+.testimonial__bg {
+  width: 968px;
+  padding: 39px 73px;
+  border-radius: 24px;
+  background: #84A178;
+}
+
+.testimonial__text {
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin: 0%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FCFCFC;
+}
+
+.testimonial__location {
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 3rem;
+  margin: 0%;
+  text-align: center;
+  color: #131313;
+}
+
+.slider-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 32px 0 0;
+}
+.slider-pagination > * {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #D9D9D9;
+}
+.slider-pagination > .dot_colored {
+  background: #84A178;
+}
+
+.slider-limiter {
+  width: 968px;
+  overflow: hidden;
+}
+
 .wrapper {
   max-width: 1168px;
   margin: auto;
@@ -818,6 +892,10 @@ h2 > * {
 }
 .layout-3-column_resource > * {
   flex-basis: 368px;
+}
+.layout-3-column_testimonials {
+  align-items: flex-start;
+  gap: 170px;
 }
 
 /*# sourceMappingURL=style.css.map */
