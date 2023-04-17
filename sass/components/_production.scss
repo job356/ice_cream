@@ -1,5 +1,5 @@
 .production {
-    padding: 60px 0 0;
+    padding: 60px 0 180px;
     background: $bg-color-main;
 }
 
@@ -30,5 +30,31 @@
     @include font($size: 1.6rem, $weight: 400, $height: 2.8rem);
     margin: 0%;
     letter-spacing: 0.04em;
+    color: $text-color-light;
+    &_bottom {
+        margin-bottom: 48px;
+    }
+}
+
+.resource {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resource__amount {
+    @include font($size: 5.8rem, $weight: 700, $height: 7.1rem);
+    margin: 40px 0 16px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-color-light;
+}
+
+.resource__description {
+    @include font($size: 1.6rem, $weight: 400, $height: 2.8rem);
+    margin: 0%;
+    text-align: center;
+    letter-spacing: 0.02em;
     color: $text-color-light;
 }
