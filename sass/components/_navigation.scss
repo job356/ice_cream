@@ -1,3 +1,9 @@
+.header-navigation {
+    @include media-tablet {
+        display: none;
+    }
+}
+
 .navigation {
     display: flex;
     gap: 27px;
@@ -12,4 +18,10 @@
     &:hover{
         color: $color-primary;
     }
+}
+
+.tablet-navigation {
+    display: flex;
+    align-items: center;
+    gap: 32px;
 }

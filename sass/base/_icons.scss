@@ -1,3 +1,10 @@
+.logo__icon {
+    @include media-tablet {
+        width: 48px;
+        height: 44px;
+    }
+}
+
 .welcome-arrow {
     display: inline-block;
     width: 51px;

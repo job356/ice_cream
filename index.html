@@ -13,9 +13,9 @@
         <header class="header">
             <div class="wrapper header__wrapper">
                 <div class="logo">
-                    <object data="Assets/icons/Logo.svg" type="image/svg+xml"></object>
+                    <object class="logo__icon" data="Assets/icons/Logo.svg" type="image/svg+xml"></object>
                 </div>
-                <nav>
+                <nav class="header-navigation">
                     <ul class="navigation">
                         <li><a class="navigation__item" href="#">Home</a></li>
                         <li><a class="navigation__item" href="#">How it’s made?</a></li>
@@ -23,10 +23,15 @@
                         <li><a class="navigation__item" href="#">Contact</a></li>
                     </ul>
                 </nav>
-                <button class="button">
-                    Buy now
-                    <object data="Assets/icons/arrow-icons/button-arrow.svg" type="image/svg+xml"></object>
-                </button>
+                <div class="tablet-navigation">
+                    <div class="burger-menu">
+                        <div class="burger-menu__line"></div>
+                    </div>
+                    <button class="button">
+                        Buy now
+                        <object data="Assets/icons/arrow-icons/button-arrow.svg" type="image/svg+xml"></object>
+                    </button>
+                </div>
             </div>
         </header>
         <section class="welcome">
