@@ -75,5 +75,13 @@
         >* {
             flex-basis: 368px;
         }
+        @include media-tablet {
+            position: absolute;
+            top: -304px;
+            gap: 16px;
+           >* {
+            flex-basis: 224px;
+           }
+        }
     }
 }

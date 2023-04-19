@@ -410,7 +410,7 @@ h2 > *, h1 {
   font-family: "Seymour One", "Verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
-.navigation__item, .link-button, .button_transparent, .button, .social-icon, .product__arrow:focus, .product__arrow:hover, .welcome-arrow {
+.navigation__item, .link-button, .button__address, .button__transparent, .button, .social-icon, .product__arrow:focus, .product__arrow:hover, .welcome-arrow {
   transition: all 0.2s ease;
 }
 
@@ -625,7 +625,7 @@ h2 > * {
   color: #000000;
 }
 
-.button_transparent {
+.button__transparent {
   font-style: normal;
   font-size: 1.4rem;
   font-weight: 600;
@@ -641,15 +641,15 @@ h2 > * {
   color: #131313;
   background: transparent;
 }
-.button_transparent:hover {
+.button__transparent:hover {
   border: 2px solid #0A8817;
 }
-.button_transparent:focus {
+.button__transparent:focus {
   border: 2px solid #0A8817;
   color: #FCFCFC;
 }
 @media (max-width: 1013px) {
-  .button_transparent {
+  .button__transparent {
     font-style: normal;
     font-size: 0.8rem;
     font-weight: 600;
@@ -657,6 +657,30 @@ h2 > * {
     padding: 10px;
     border-radius: 8px;
   }
+}
+
+.button__address {
+  font-style: normal;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  padding: 12px 34px;
+  border-radius: 10px;
+  border: none;
+  border: 2px solid #F8D24E;
+  color: #131313;
+  background: transparent;
+}
+.button__address:hover {
+  border: 2px solid #0A8817;
+}
+.button__address:focus {
+  border: 2px solid #0A8817;
+  color: #FCFCFC;
 }
 
 .link-button {
@@ -1220,6 +1244,12 @@ h2 > * {
   padding: 0 0 120px;
   background: #84A178;
 }
+@media (max-width: 1013px) {
+  .addresses {
+    position: relative;
+    padding: 0 0 40px;
+  }
+}
 
 .address {
   display: flex;
@@ -1229,6 +1259,12 @@ h2 > * {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   background: #FFFFFF;
+}
+@media (max-width: 1013px) {
+  .address {
+    gap: 29px;
+    padding: 40px 24px;
+  }
 }
 
 .point-bg {
@@ -1257,6 +1293,14 @@ h2 > * {
   letter-spacing: 0.04em;
   color: #131313;
 }
+@media (max-width: 1013px) {
+  .address__city, .address__working-days, .address__phone, .address__email {
+    font-style: normal;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+  }
+}
 
 .address__opening-hours {
   font-style: normal;
@@ -1268,6 +1312,14 @@ h2 > * {
 }
 .address__opening-hours_delimiter {
   margin: 0 0 12px;
+}
+@media (max-width: 1013px) {
+  .address__opening-hours {
+    font-style: normal;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+  }
 }
 
 .address__link {
@@ -1283,6 +1335,14 @@ h2 > * {
 .address__link:hover {
   text-decoration: underline;
 }
+@media (max-width: 1013px) {
+  .address__link {
+    font-style: normal;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+  }
+}
 
 .line {
   width: 100%;
@@ -1297,6 +1357,11 @@ h2 > * {
 }
 .address__button > * {
   flex-basis: 196px;
+}
+@media (max-width: 1013px) {
+  .address__button {
+    padding: 284px 0 0;
+  }
 }
 
 .wrapper {
@@ -1408,6 +1473,16 @@ h2 > * {
 }
 .layout-3-column_address > * {
   flex-basis: 368px;
+}
+@media (max-width: 1013px) {
+  .layout-3-column_address {
+    position: absolute;
+    top: -304px;
+    gap: 16px;
+  }
+  .layout-3-column_address > * {
+    flex-basis: 224px;
+  }
 }
 
 .footer {
