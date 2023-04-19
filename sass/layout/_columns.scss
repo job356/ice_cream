@@ -19,6 +19,16 @@
         > .production__content {
             flex-basis: 532px;
         }
+        @include media-tablet {
+            gap: 32px;
+            padding-bottom: 48.12px;
+            > .production__img {
+                flex-basis: 336px;
+            }
+            > .production__content {
+                flex-basis: 336px;
+            }
+        }
     }
     &_footer {
         align-items: flex-start;
@@ -43,6 +53,11 @@
         justify-content: space-between;
         >* {
             flex-basis: 368px;
+        }
+        @include media-tablet {
+            >* {
+                flex-basis: 152px;
+            }
         }
     }
     &_testimonials {
