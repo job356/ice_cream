@@ -1,11 +1,18 @@
 .footer {
     padding: 0 0 12px;
     background: $bg-color-main;
+    @include media-tablet {
+        padding: 0 0 13px;
+    }
 }
 
 .footer__title {
     margin: 0%;
     color: $text-color-light;
+    @include media-tablet {
+        flex-basis: 352px;
+       text-align: left;
+    }
 }
 
 .footer__social {
@@ -14,6 +21,10 @@
     align-items: flex-end;
     gap: 40px;
     padding: 12px 0 0;
+    @include media-tablet {
+        padding: 54px 0 0;
+        gap: 25px;
+    }
 }
 
 .footer__contacts {
@@ -23,6 +34,9 @@
     color: $text-color-dark;
     >* {
         color: $text-color-light;
+    }
+    @include media-tablet {
+        @include font($size: 1.4rem, $weight: 700, $height: 2.6rem);
     }
 }
 
@@ -38,4 +52,8 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: #7A7A7A;
+    @include media-tablet {
+        @include font($size: 1.4rem, $weight: 700, $height: 2.6rem);
+        margin: 14px 0 0;
+    }
 }
