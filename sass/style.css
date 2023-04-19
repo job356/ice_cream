@@ -632,6 +632,16 @@ h2 > * {
   border: 2px solid #0A8817;
   color: #FCFCFC;
 }
+@media (max-width: 1013px) {
+  .button_transparent {
+    font-style: normal;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 0.1rem;
+    padding: 10px;
+    border-radius: 8px;
+  }
+}
 
 .link-button {
   font-style: normal;
@@ -648,6 +658,14 @@ h2 > * {
 }
 .link-button:disabled {
   color: #ABABAB;
+}
+@media (max-width: 1013px) {
+  .link-button {
+    font-style: normal;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 0.1rem;
+  }
 }
 
 @media (max-width: 1013px) {
@@ -683,12 +701,23 @@ h2 > * {
 .welcome {
   padding: 48px 0 65px;
 }
+@media (max-width: 1013px) {
+  .welcome {
+    padding: 28px 0 13px;
+  }
+}
 
 .header-welcome-bg {
   background-color: #84A178;
   background-image: url(../Assets/img/backgrounds/welcome-bg/ice-cream-welcom-bg.png), url(../Assets/img/backgrounds/welcome-bg/doats-welcome-bg.png);
   background-repeat: no-repeat;
   background-position: right 15px, right bottom;
+}
+@media (max-width: 1013px) {
+  .header-welcome-bg {
+    background-image: url(/Assets/img/backgrounds/welcome-bg/ice-cream-welcome-bg-tablet.png), url(/Assets/img/backgrounds/welcome-bg/doats-welcome-bg-tablet.png);
+    background-position: right 30px, right bottom;
+  }
 }
 
 .welcome__wrapper {
@@ -700,6 +729,23 @@ h2 > * {
   margin: 0 0 28px;
   color: #FCFCFC;
 }
+@media (max-width: 1013px) {
+  .welcome__title {
+    font-style: normal;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.3rem;
+    margin: 10px 0 20px;
+    text-transform: uppercase;
+    color: #FCFCFC;
+  }
+  .welcome__title > * {
+    font-style: normal;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 2.3rem;
+  }
+}
 
 .welcome__buttons {
   display: flex;
@@ -707,9 +753,22 @@ h2 > * {
   gap: 34px;
   padding-bottom: 42px;
 }
+@media (max-width: 1013px) {
+  .welcome__buttons {
+    gap: 20px;
+    padding-bottom: 28px;
+  }
+}
 
 .welcome__more {
   flex-basis: 200px;
+}
+
+@media (max-width: 1013px) {
+  .more-img {
+    width: 152px;
+    height: 152px;
+  }
 }
 
 .more-text {
@@ -719,6 +778,15 @@ h2 > * {
   line-height: 2rem;
   margin: 32px 0 32px;
   color: #FCFCFC;
+}
+@media (max-width: 1013px) {
+  .more-text {
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    margin: 20px 0 20px;
+  }
 }
 
 .amount__point {
@@ -734,8 +802,26 @@ h2 > * {
 .amount__point_cafes {
   margin: 8px 0 4px;
 }
+@media (max-width: 1013px) {
+  .amount__point_cafes {
+    margin: 0 0 4px;
+  }
+}
 .amount__point_truck {
   margin: 16px 0 4px;
+}
+@media (max-width: 1013px) {
+  .amount__point_truck {
+    margin: 20px 0 4px;
+  }
+}
+@media (max-width: 1013px) {
+  .amount__point {
+    font-style: normal;
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 3.4rem;
+  }
 }
 
 .name__point {
@@ -746,6 +832,14 @@ h2 > * {
   color: #FCFCFC;
   margin: 0%;
   text-align: right;
+}
+@media (max-width: 1013px) {
+  .name__point {
+    font-style: normal;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 0.1rem;
+  }
 }
 
 .products {
@@ -1084,6 +1178,14 @@ h2 > * {
 }
 .layout-2-column_welcome {
   gap: 24px;
+}
+@media (max-width: 1013px) {
+  .layout-2-column_welcome {
+    gap: 33px;
+  }
+  .layout-2-column_welcome > * {
+    flex-basis: 152px;
+  }
 }
 .layout-2-column_production {
   align-items: flex-start;

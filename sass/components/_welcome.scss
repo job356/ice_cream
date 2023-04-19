@@ -1,5 +1,8 @@
 .welcome {
     padding: 48px 0 65px;
+    @include media-tablet {
+        padding: 28px 0 13px;
+    }
 }
 
 .header-welcome-bg {
@@ -7,6 +10,10 @@
     background-image: url(../Assets/img/backgrounds/welcome-bg/ice-cream-welcom-bg.png), url(../Assets/img/backgrounds/welcome-bg/doats-welcome-bg.png);
     background-repeat: no-repeat;
     background-position: right 15px, right bottom;
+    @include media-tablet {
+        background-image: url(/Assets/img/backgrounds/welcome-bg/ice-cream-welcome-bg-tablet.png), url(/Assets/img/backgrounds/welcome-bg/doats-welcome-bg-tablet.png);
+        background-position: right 30px, right bottom;
+    }
 }
 
 .welcome__wrapper {
@@ -17,6 +24,15 @@
 .welcome__title {
     margin: 0 0 28px;
     color: $text-color-light;
+    @include media-tablet {
+        @include font($size: 1.8rem, $weight: 400, $height: 2.3rem);
+        margin: 10px 0 20px;
+        text-transform: uppercase;
+        color: $text-color-light;
+        >* {
+            @include font ($size: 2.4rem, $weight: 400, $height: 2.3rem);
+        }
+    }
 }
 
 .welcome__buttons {
@@ -24,16 +40,31 @@
     align-items: center;
     gap: 34px;
     padding-bottom: 42px;
+    @include media-tablet {
+        gap: 20px;
+        padding-bottom: 28px;
+    }
 }
 
 .welcome__more {
     flex-basis: 200px;
 }
 
+.more-img {
+    @include media-tablet {
+        width: 152px;
+        height: 152px;
+    }
+}
+
 .more-text {
     @include font($size: 1.4rem, $weight: 400, $height: 2rem);
     margin: 32px 0 32px;
     color: $text-color-light;
+    @include media-tablet {
+        @include font($size: 1.2rem, $weight: 400, $height: 1.7rem);
+        margin: 20px 0 20px;
+    }
 }
 
 .amount__point {
@@ -44,9 +75,18 @@
     color: $text-color-dark;
     &_cafes {
         margin: 8px 0 4px;
+        @include media-tablet {
+            margin: 0 0 4px;
+        }
     }
     &_truck {
         margin: 16px 0 4px;
+        @include media-tablet {
+            margin: 20px 0 4px;
+        }
+    }
+    @include media-tablet {
+        @include font($size: 2.8rem, $weight: 900, $height: 3.4rem);
     }
 }
 
@@ -55,4 +95,7 @@
     color: $text-color-light;
     margin: 0%;
     text-align: right;
+    @include media-tablet {
+        @include font($size: 0.8rem, $weight: 400, $height: 0.1rem);
+    }
 }

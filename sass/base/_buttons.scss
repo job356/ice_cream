@@ -50,6 +50,11 @@
         border: 2px solid #0A8817;
         color: $text-color-light;
     }
+    @include media-tablet {
+        @include font($size: 0.8rem, $weight: 600, $height: 0.1rem);
+        padding: 10px;
+        border-radius: 8px;
+    }
 }
 
 .link-button {
@@ -64,5 +69,8 @@
     }
     &:disabled {
         color: #ABABAB;
+    }
+    @include media-tablet {
+        @include font($size: 0.8rem, $weight: 600, $height: 0.1rem);
     }
 }

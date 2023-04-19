@@ -2,6 +2,12 @@
     @include column;
     &_welcome {
         gap: 24px;
+        @include media-tablet {
+            gap: 33px;
+            >* {
+                flex-basis: 152px;
+            }
+        }
     }
     &_production {
         align-items: flex-start;
