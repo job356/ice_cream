@@ -2,10 +2,16 @@
     padding: 60px 0 57px;
     background-repeat: no-repeat;
     background-image: url(../Assets/img/backgrounds/product-bg/Мороженое\ фон.svg);
+    @include media-tablet {
+        padding: 60px 0 82px;
+    }
 }
 
 .products__title {
     margin: 0 0 17px;
+    @include media-tablet {
+        margin: 0%;
+    }
 }
 
 .product-content {
@@ -28,6 +34,9 @@
     &_milkshake {
         background: $bg-color-milkshake-product;
     }
+    @include media-tablet {
+        padding: 0 26px 15px;
+    }
 }
 
 .product__circle {
@@ -47,11 +56,21 @@
     &_milkshake {
         background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
     }
+    @include media-tablet {
+        width: 199.34px;
+        height: 196.85px;
+        top: 95px;
+        left: 12px;
+    }
 }
 
 .product__img {
     position: absolute;
     top: -17px;
+    @include media-tablet {
+        width: 199.34px;
+        height: 196.85px;
+    }
 }
 
 .product__name {
@@ -61,6 +80,10 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $text-color-dark;
+    @include media-tablet {
+        @include font($size: 2.2rem, $weight: 700, $height: 2.7rem);
+        margin: 106.75px 0 39.91px;
+    }
 }
 
 .product__description {
@@ -70,4 +93,9 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: $text-color-dark;
+    @include media-tablet {
+        @include font($size: 1.4rem, $weight: 400, $height: 2.5rem);
+        height: 175px;
+        margin: 0 0 50.06px;
+    }
 }

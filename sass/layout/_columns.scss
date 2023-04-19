@@ -34,6 +34,9 @@
         align-items: flex-start;
         >* {
             flex-basis: 370px;
+            @include media-tablet {
+                flex-basis: 224px;
+            }
         }
     }
     &_resource {
