@@ -2,11 +2,19 @@
     padding: 0 0 207px;
     background-repeat: no-repeat;
     background-image: url(../Assets/img/backgrounds/testimonials-bg/Мороженое\ фон.svg);
+    @include media-tablet {
+        padding: 0 0 384px;
+    }
 }
 
 .testimonial-img {
     position: relative;
     top: -98px;
+    @include media-tablet {
+        width: 704px;
+        height: 327px;
+        top: -164px;
+    }
 }
 
 .testimonials__wrapper {
@@ -34,6 +42,11 @@
     padding: 39px 73px;
     border-radius: 24px;
     background: $bg-color-main;
+    @include media-tablet {
+        width: 704px;
+        height: 138px;
+        padding: 29px 80px;
+    }
 }
 
 .testimonial__text {
@@ -42,6 +55,9 @@
     text-align: center;
     letter-spacing: 0.04em;
     color: $text-color-light;
+    @include media-tablet {
+        @include font($size: 1.4rem, $weight: 500, $height: 2.6rem);
+    }
 }
 
 .testimonial__location {
@@ -70,4 +86,7 @@
 .slider-limiter {
     width: 968px;
     overflow: hidden;
+    @include media-tablet {
+        width: 704px;
+    }
 }

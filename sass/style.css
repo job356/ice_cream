@@ -1110,10 +1110,22 @@ h2 > * {
   background-repeat: no-repeat;
   background-image: url(../Assets/img/backgrounds/testimonials-bg/Мороженое\ фон.svg);
 }
+@media (max-width: 1013px) {
+  .testimonials {
+    padding: 0 0 384px;
+  }
+}
 
 .testimonial-img {
   position: relative;
   top: -98px;
+}
+@media (max-width: 1013px) {
+  .testimonial-img {
+    width: 704px;
+    height: 327px;
+    top: -164px;
+  }
 }
 
 .testimonials__wrapper {
@@ -1141,6 +1153,13 @@ h2 > * {
   border-radius: 24px;
   background: #84A178;
 }
+@media (max-width: 1013px) {
+  .testimonial__bg {
+    width: 704px;
+    height: 138px;
+    padding: 29px 80px;
+  }
+}
 
 .testimonial__text {
   font-style: normal;
@@ -1151,6 +1170,14 @@ h2 > * {
   text-align: center;
   letter-spacing: 0.04em;
   color: #FCFCFC;
+}
+@media (max-width: 1013px) {
+  .testimonial__text {
+    font-style: normal;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+  }
 }
 
 .testimonial__location {
@@ -1182,6 +1209,11 @@ h2 > * {
 .slider-limiter {
   width: 968px;
   overflow: hidden;
+}
+@media (max-width: 1013px) {
+  .slider-limiter {
+    width: 704px;
+  }
 }
 
 .addresses {
@@ -1363,6 +1395,11 @@ h2 > * {
   align-items: flex-start;
   gap: 80px;
   padding: 30px 0 0;
+}
+@media (max-width: 1013px) {
+  .layout-3-column_testimonials {
+    padding: 0%;
+  }
 }
 .layout-3-column_address {
   position: relative;
