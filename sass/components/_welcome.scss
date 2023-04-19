@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-position: right 15px, right bottom;
     @include media-tablet {
-        background-image: url(/Assets/img/backgrounds/welcome-bg/ice-cream-welcome-bg-tablet.png), url(/Assets/img/backgrounds/welcome-bg/doats-welcome-bg-tablet.png);
+        background-image: url(../Assets/img/backgrounds/welcome-bg/ice-cream-welcome-bg-tablet.png), url(../Assets/img/backgrounds/welcome-bg/doats-welcome-bg-tablet.png);
         background-position: right 30px, right bottom;
     }
 }
