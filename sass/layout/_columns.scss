@@ -45,10 +45,16 @@
     &_products {
         justify-content: space-between;
         align-items: flex-start;
+        @include media-mobile {
+            flex-direction: column;
+        }
         >* {
             flex-basis: 370px;
             @include media-tablet {
                 flex-basis: 224px;
+            }
+            @include media-mobile {
+                flex-basis: 100%;
             }
         }
     }
