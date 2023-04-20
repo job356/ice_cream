@@ -8,6 +8,9 @@
                 flex-basis: 152px;
             }
         }
+        @include media-mobile {
+            display: none;
+        }
     }
     &_production {
         align-items: flex-start;

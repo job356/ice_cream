@@ -13,6 +13,12 @@
     background: $color-primary;
 
     @extend %transition;
+    &_header {
+        @include media-mobile {
+            display: none;
+        }
+    }
+    
     &:hover {
         background: #0A8817;
         color: #000000;

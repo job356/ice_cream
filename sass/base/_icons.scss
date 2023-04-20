@@ -3,6 +3,10 @@
         width: 48px;
         height: 44px;
     }
+    @include media-mobile {
+        width: 40.47px;
+        height: 37px;
+    }
 }
 
 .welcome-arrow {

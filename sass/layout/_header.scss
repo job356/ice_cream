@@ -5,4 +5,7 @@
     @include media-tablet {
         padding: 17px 0 6px;
     }
+    @include media-mobile {
+        padding: 12px 0 0;
+    }
 }
