@@ -15,6 +15,11 @@
         height: 327px;
         top: -164px;
     }
+    @include media-mobile {
+        top: -24px;
+        width: 100%;
+        height: 130px;
+    }
 }
 
 .testimonials__wrapper {
@@ -47,6 +52,11 @@
         height: 138px;
         padding: 29px 80px;
     }
+    @include media-mobile {
+        width: 280px;
+        height: 256px;
+        padding: 34px 39px;
+    }
 }
 
 .testimonial__text {
@@ -58,6 +68,9 @@
     @include media-tablet {
         @include font($size: 1.4rem, $weight: 500, $height: 2.6rem);
     }
+    @include media-mobile {
+        @include font($size: 1.2rem, $weight: 400, $height: 3.1rem);
+    }
 }
 
 .testimonial__location {
@@ -65,6 +78,9 @@
     margin: 0%;
     text-align: center;
     color: $text-color-dark;
+    @include media-mobile {
+        @include font($size: 2rem, $weight: 500, $height: 3.7rem);
+    }
 }
 
 .slider-pagination {
@@ -81,6 +97,9 @@
     > .dot_colored {
         background: $bg-color-main;
     }
+    @include media-mobile {
+        padding: 14px 0 0;
+    }
 }
 
 .slider-limiter {
@@ -88,5 +107,9 @@
     overflow: hidden;
     @include media-tablet {
         width: 704px;
+    }
+    @include media-mobile {
+        width: 280px;
+        padding-top: 56px;
     }
 }
