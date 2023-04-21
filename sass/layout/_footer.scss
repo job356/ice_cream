@@ -4,6 +4,9 @@
     @include media-tablet {
         padding: 0 0 13px;
     }
+    @include media-mobile {
+        padding: 0 0 62px;
+    }
 }
 
 .footer__title {
@@ -11,7 +14,10 @@
     color: $text-color-light;
     @include media-tablet {
         flex-basis: 352px;
-       text-align: left;
+        text-align: left;
+    }
+    @include media-mobile {
+        flex-basis: 134px;
     }
 }
 
@@ -25,6 +31,11 @@
         padding: 54px 0 0;
         gap: 25px;
     }
+    @include media-mobile {
+        width: 100%;
+        padding: 42px 0 0;
+        gap: 38px;
+    }
 }
 
 .footer__contacts {
@@ -37,6 +48,9 @@
     }
     @include media-tablet {
         @include font($size: 1.4rem, $weight: 700, $height: 2.6rem);
+    }
+    @include media-mobile {
+        @include font($size: 1.2rem, $weight: 700, $height: 2.2rem);
     }
 }
 
@@ -55,5 +69,9 @@
     @include media-tablet {
         @include font($size: 1.4rem, $weight: 700, $height: 2.6rem);
         margin: 14px 0 0;
+    }
+    @include media-mobile {
+        @include font($size: 1.4rem, $weight: 700, $height: 2.1rem);
+        margin: 16px 60px 0;
     }
 }
