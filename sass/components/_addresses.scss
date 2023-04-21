@@ -1,8 +1,11 @@
+.wrapper__address {
+    position: relative;
+}
+
 .addresses {
     padding: 0 0 120px;
     background: $bg-color-main;
     @include media-tablet {
-        position: relative;
         padding: 0 0 40px;
     }
 }
@@ -20,6 +23,10 @@
         gap: 29px;
         padding: 40px 24px;
     }
+    @include media-mobile {
+        gap: 24px;
+        padding: 29px 32px;
+    }
 }
 
 .point-bg {
@@ -34,6 +41,9 @@
     margin: 0%;
     text-align: center;
     color: $text-color-dark;
+    @include media-mobile {
+        @include font($size: 1.2rem, $weight: 500, $height: 2.2rem);
+    }
 }
 
 .address__city, .address__working-days, .address__phone, .address__email {
@@ -43,6 +53,9 @@
     color: $text-color-dark;
     @include media-tablet {
         @include font($size: 1.4rem, $weight: 500, $height: 2.6rem);
+    }
+    @include media-mobile {
+        @include font($size: 1.2rem, $weight: 500, $height: 2.2rem);
     }
 }
 
@@ -55,6 +68,9 @@
     }
     @include media-tablet {
         @include font($size: 1.4rem, $weight: 500, $height: 2.6rem);
+    }
+    @include media-mobile {
+        @include font($size: 1.2rem, $weight: 500, $height: 2.2rem);
     }
 }
 
@@ -69,6 +85,9 @@
     }
     @include media-tablet {
         @include font($size: 1.4rem, $weight: 500, $height: 2.6rem);
+    }
+    @include media-mobile {
+        @include font ($size: 1.2rem, $weight: 500, $height: 2.2rem);
     }
 }
 
@@ -87,5 +106,12 @@
     }
     @include media-tablet {
         padding: 284px 0 0;
+    }
+    @include media-mobile {
+        flex-direction: column;
+        padding: 962.37px 42px 0;
+        >* {
+            flex-basis: 42px;
+        }
     }
 }

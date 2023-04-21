@@ -1310,6 +1310,11 @@ h2 > * {
     padding: 0 0 384px;
   }
 }
+@media (max-width: 704px) {
+  .testimonials {
+    padding: 0 0 394px;
+  }
+}
 
 .testimonial-img {
   position: relative;
@@ -1452,13 +1457,16 @@ h2 > * {
   }
 }
 
+.wrapper__address {
+  position: relative;
+}
+
 .addresses {
   padding: 0 0 120px;
   background: #84A178;
 }
 @media (max-width: 1013px) {
   .addresses {
-    position: relative;
     padding: 0 0 40px;
   }
 }
@@ -1478,6 +1486,12 @@ h2 > * {
     padding: 40px 24px;
   }
 }
+@media (max-width: 704px) {
+  .address {
+    gap: 24px;
+    padding: 29px 32px;
+  }
+}
 
 .point-bg {
   width: fit-content;
@@ -1495,6 +1509,14 @@ h2 > * {
   text-align: center;
   color: #131313;
 }
+@media (max-width: 704px) {
+  .point-name {
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+  }
+}
 
 .address__city, .address__working-days, .address__phone, .address__email {
   font-style: normal;
@@ -1511,6 +1533,14 @@ h2 > * {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2.6rem;
+  }
+}
+@media (max-width: 704px) {
+  .address__city, .address__working-days, .address__phone, .address__email {
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.2rem;
   }
 }
 
@@ -1531,6 +1561,14 @@ h2 > * {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2.6rem;
+  }
+}
+@media (max-width: 704px) {
+  .address__opening-hours {
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.2rem;
   }
 }
 
@@ -1555,6 +1593,14 @@ h2 > * {
     line-height: 2.6rem;
   }
 }
+@media (max-width: 704px) {
+  .address__link {
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+  }
+}
 
 .line {
   width: 100%;
@@ -1573,6 +1619,15 @@ h2 > * {
 @media (max-width: 1013px) {
   .address__button {
     padding: 284px 0 0;
+  }
+}
+@media (max-width: 704px) {
+  .address__button {
+    flex-direction: column;
+    padding: 962.37px 42px 0;
+  }
+  .address__button > * {
+    flex-basis: 42px;
   }
 }
 
@@ -1727,6 +1782,11 @@ h2 > * {
   top: -96px;
   gap: 32px;
 }
+@media (max-width: 704px) {
+  .layout-3-column_address {
+    flex-direction: column;
+  }
+}
 .layout-3-column_address > * {
   flex-basis: 368px;
 }
@@ -1738,6 +1798,16 @@ h2 > * {
   }
   .layout-3-column_address > * {
     flex-basis: 224px;
+  }
+}
+@media (max-width: 704px) {
+  .layout-3-column_address {
+    position: absolute;
+    top: -345px;
+    gap: 20px;
+  }
+  .layout-3-column_address > * {
+    flex-basis: 280px;
   }
 }
 

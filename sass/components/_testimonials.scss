@@ -5,6 +5,9 @@
     @include media-tablet {
         padding: 0 0 384px;
     }
+    @include media-mobile {
+        padding: 0 0 394px;
+    }
 }
 
 .testimonial-img {

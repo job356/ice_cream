@@ -96,6 +96,9 @@
         position: relative;
         top: -96px;
         gap: 32px;
+        @include media-mobile {
+            flex-direction: column;
+        }
         >* {
             flex-basis: 368px;
         }
@@ -106,6 +109,14 @@
            >* {
             flex-basis: 224px;
            }
+        }
+        @include media-mobile {
+            position: absolute;
+            top: -345px;
+            gap: 20px;
+            >* {
+                flex-basis: 280px;
+            }
         }
     }
 }
