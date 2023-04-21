@@ -4,6 +4,9 @@
     @include media-tablet {
         padding: 60px 0 204px;
     }
+    @include media-mobile {
+        padding: 60px 0 60px;
+    }
 }
 
 .production__title {
@@ -11,6 +14,13 @@
     color: $text-color-light;
     @include media-tablet {
         margin: 0 0 72px;
+    }
+    @include media-mobile {
+        margin: 0 0 32px;
+        >* {
+            display: inline-block;
+            width: 200px;
+        }
     }
 }
 
@@ -29,10 +39,20 @@
             width: 334.65px;
             height: 330px;
         }
+        @include media-mobile {
+            top: 21.82px;
+            left: 1.12px;
+            width: 278.19px;
+            height: 278.25px;
+        }
     }
     @include media-tablet {
         width: 334.65px;
         height: 330px;
+    }
+    @include media-mobile {
+        width: 278.19px;
+        height: 278.25px;
     }
 }
 
@@ -40,6 +60,12 @@
     padding: 90px 0 0;
     @include media-tablet {
         padding: 7px 0 0;
+    }
+    @include media-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0%;
     }
 }
 
@@ -50,9 +76,16 @@
     color: $text-color-light;
     &_bottom {
         margin-bottom: 48px;
+        @include media-mobile {
+            margin-bottom: 20px;
+        }
     }
     @include media-tablet {
         @include font($size: 1.2rem, $weight: 400, $height: 2.3rem);
+    }
+    @include media-mobile {
+        @include font($size: 1.2rem, $weight: 400, $height: 2.1rem);
+        text-align: center;
     }
 }
 
@@ -73,6 +106,10 @@
         @include font($size: 4.8rem, $weight: 700, $height: 5.9rem);
         margin: 32px 0 16px;
     }
+    @include media-mobile {
+        @include font($size: 3.6rem, $weight: 700, $height: 4.2rem);
+        margin: 16px 0 18px;
+    }
 }
 
 .resource__description {
@@ -83,5 +120,8 @@
     color: $text-color-light;
     @include media-tablet {
         @include font($size: 1.4rem, $weight: 400, $height: 2.4rem);
+    }
+    @include media-mobile {
+        @include font($size: 1.2rem, $weight: 700, $height: 2rem);
     }
 }

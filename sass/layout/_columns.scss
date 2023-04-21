@@ -32,6 +32,17 @@
                 flex-basis: 336px;
             }
         }
+        @include media-mobile {
+            flex-direction: column;
+            gap: 61.83px;
+            padding-bottom: 42.23px;
+            > .production__img {
+                flex-basis: 278.19px;
+            }
+            > .production__content {
+                flex-basis: 220px;
+            }
+        }
     }
     &_footer {
         align-items: flex-start;
@@ -67,6 +78,10 @@
             >* {
                 flex-basis: 152px;
             }
+        }
+        @include media-mobile {
+            flex-direction: column;
+            gap: 28px;
         }
     }
     &_testimonials {
