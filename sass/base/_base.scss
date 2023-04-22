@@ -4,6 +4,11 @@ html {
 
 body {
     @extend %font-prim;
+    cursor: url(/Assets/icons/cursor.svg), default;
+}
+
+button, a {
+    cursor: url(/Assets/icons/cursor.svg), default;
 }
 
 h1 {

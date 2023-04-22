@@ -16,7 +16,7 @@
     background-repeat: no-repeat;
     background-image: url(/Assets/icons/arrow-icons/welcome-arrow.svg);
     @extend %transition;
-    cursor: pointer;
+    cursor: url(/Assets/icons/cursor.svg), default;
     &:hover {
         background-image: url(../Assets/icons/arrow-icons/welcome-arrow-hover.svg);
     }
@@ -67,7 +67,7 @@
     height: 35px;
 
     background-repeat: no-repeat;
-    cursor: pointer;
+    cursor: url(/Assets/icons/cursor.svg), default;
     @extend %transition;
     &_git-hub {
         background-image: url(../Assets/icons/social-icons/github.svg);

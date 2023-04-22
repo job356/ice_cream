@@ -418,6 +418,14 @@ html {
   font-size: 10px;
 }
 
+body {
+  cursor: url(/Assets/icons/cursor.svg), default;
+}
+
+button, a {
+  cursor: url(/Assets/icons/cursor.svg), default;
+}
+
 h1 {
   font-style: normal;
   font-size: 3.8rem;
@@ -536,7 +544,7 @@ h2 > * {
   height: 16px;
   background-repeat: no-repeat;
   background-image: url(/Assets/icons/arrow-icons/welcome-arrow.svg);
-  cursor: pointer;
+  cursor: url(/Assets/icons/cursor.svg), default;
 }
 .welcome-arrow:hover {
   background-image: url(../Assets/icons/arrow-icons/welcome-arrow-hover.svg);
@@ -583,7 +591,7 @@ h2 > * {
   width: 35px;
   height: 35px;
   background-repeat: no-repeat;
-  cursor: pointer;
+  cursor: url(/Assets/icons/cursor.svg), default;
 }
 .social-icon_git-hub {
   background-image: url(../Assets/icons/social-icons/github.svg);
